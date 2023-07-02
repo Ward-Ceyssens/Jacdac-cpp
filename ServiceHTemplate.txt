@@ -1,0 +1,31 @@
+//
+// generated on {creationdate}.
+// regenerate=true
+//
+
+#ifndef JD_CPP_{filenameCAPS}_H
+#define JD_CPP_{filenameCAPS}_H
+
+#include "{baseclass}.h"
+#include "jacdac-c/jacdac/dist/c/{filename}.h"
+
+class {servicename} : public {baseclass} {{
+public:
+    explicit {servicename}({constructorargs});
+    void process() override;
+    void handle_packet(jd_packet_t *pkt) override;
+
+    uint32_t getServiceClass() override {{
+        return {serviceclass};
+    }}
+    {publicfunctions}
+
+private:
+
+    {membervars}
+
+    {privatefunctions}
+}};
+
+
+#endif //JD_CPP_{filenameCAPS}_H
